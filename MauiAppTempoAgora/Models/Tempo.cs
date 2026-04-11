@@ -10,8 +10,8 @@
         public double? speed { get; set; }
         public string? main { get; set; }
         public string? description { get; set; }
-        public string? sunrise { get; set; }
-        public string? sunset { get; set; }
+        public DateTime sunrise { get; set; }
+        public DateTime sunset { get; set; }
     }
 }
 

@@ -27,8 +27,11 @@ namespace MauiAppTempoAgora
                                          $"Longitude: {t.lon} \n" +
                                          $"Nascer do Sol: {t.sunrise} \n" +
                                          $"Por do Sol: {t.sunset} \n" +
-                                         $"Temp Máx: {t.temp_max} \n" +
-                                         $"Temp Min: {t.temp_min} \n";
+                                         $"Temp Máx: {t.temp_max} ºC \n" +
+                                         $"Temp Min: {t.temp_min} ºC \n" +
+                                         $"Descrição do tempo: {t.description} \n" +
+                                         $"Velocidade do vento: {t.speed} m/s \n" +
+                                         $"Visibilidade: {t.visibility} m \n";
 
                         lbl_res.Text = dados_previsao;
 
@@ -36,7 +39,7 @@ namespace MauiAppTempoAgora
                     else
                     {
 
-                        lbl_res.Text = "Sem dados de Previsão";
+                        lbl_res.Text = "Cidade não encontrada ou falha na escrita";
                     }
                 }
                 else
