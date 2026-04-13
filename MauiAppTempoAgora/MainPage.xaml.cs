@@ -79,11 +79,11 @@ namespace MauiAppTempoAgora
                                               $"Altitude: {local.Altitude} m \n" +
                                               $"Precisão: {local.Accuracy} m \n" +
                                               $"Tempo da última atualização: {local.Timestamp} \n";
-                    lbl_res.Text = dados_localizacao;
+                    lbl_coords.Text = dados_localizacao;
                 }
                 else
                 {
-                    lbl_res.Text = "Não foi possível obter a localização.";
+                    lbl_coords.Text = "Não foi possível obter a localização.";
                 }
 
             }
